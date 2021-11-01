@@ -1,0 +1,28 @@
+.container {
+    width: 60%;
+    height: 60%;
+    border: 5px solid black;
+    display: flex;
+}
+
+.container:after {
+    content: "";
+    padding-bottom: 100%;
+}
+
+.row {
+    display: inline-block;
+    border: 1px solid gray;
+}
+
+.pixel {
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
