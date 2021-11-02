@@ -4,9 +4,14 @@ function genDivs(v) {
     for(var i = 0; i < v; i++) {
         var row = document.createElement("div");
         row.className = "row";
-        var h = 100 / v;
-        document.getElementsByClassName("row").style.height = `${h}%`;
         e.appendChild(row);
+        for(var x = 0; x < v; x++) {
+            var pix = document.createElement("div");
+            pix.className = "pixel";
+            pix.id = i + (x * v);
+            row.appendChild(pix);
+        }
     }
 
 }
+
