@@ -15,3 +15,8 @@ function genDivs(v) {
 
 }
 
+document.querySelector(".container").addEventListener('mouseover', function(e) {
+    if(e.target.className == "pixel") {
+        e.target.classList.add("filled");
+    }
+})
