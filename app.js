@@ -20,3 +20,9 @@ document.querySelector(".container").addEventListener('mouseover', function(e) {
         e.target.classList.add("filled");
     }
 })
+
+function removeDivs() {
+    const container = document.querySelector('.container');
+    container.innerHTML = '';
+    
+}
