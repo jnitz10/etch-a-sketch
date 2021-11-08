@@ -26,3 +26,17 @@ function removeDivs() {
     container.innerHTML = '';
     
 }
+
+var slider = document.getElementById("gridSize");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+function genGrid(x) {
+    removeDivs();
+    genDivs(x);
+
+}
