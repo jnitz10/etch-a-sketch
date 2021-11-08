@@ -1,6 +1,6 @@
 .container {
-    width: 60%;
-    height: 60%;
+    width: 50vw;
+    height: 50vw;
     border: 5px solid black;
     display: flex;
 }
