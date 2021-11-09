@@ -29,14 +29,18 @@ function removeDivs() {
 
 var slider = document.getElementById("gridSize");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+output.innerHTML = `${slider.value} X ${slider.value}`;
 
 slider.oninput = function() {
-  output.innerHTML = this.value;
+  output.innerHTML = `${this.value} X ${this.value}`;
 }
 
-function genGrid(x) {
+function genGrid() {
     removeDivs();
-    genDivs(x);
+    genDivs(slider.value);
 
+}
+
+window.onload = function () {
+    genGrid();
 }
